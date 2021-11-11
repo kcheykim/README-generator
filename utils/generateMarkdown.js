@@ -13,14 +13,14 @@ function generateMarkdown(data) {
     * [License](#license)    
     
     ## Installation
-    ${data.installation}
+    Open up your terminal and clone this repository with: $ git clone ${data.installation}
 
-    ## Usage - attach video here
-    ${data.useage}
+    ## Usage and Demo Video
+    Open up your ${data.usage}
   
 
     ## Credits
-    ${data.contributors}
+    Here are the collaborators: ${data.contributors}
 
     ## License
 
@@ -28,7 +28,8 @@ function generateMarkdown(data) {
 
     ## Contributing
 
-    ##
+    ## Test
+
   `);
 }
 // TODO: Create a function that returns a license badge based on which license is passed in
