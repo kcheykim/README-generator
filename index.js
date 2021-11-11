@@ -21,8 +21,8 @@ const questions = [{
     },
     {
         type: 'input',
-        name: 'useage',
-        message: 'Please provide useage information:'
+        name: 'usage',
+        message: 'Please provide usage information:'
     },
     {
         type: 'input',
@@ -59,7 +59,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-        .then(data => writeToFile('README', generateMarkdown(data)));
+        .then(data => writeToFile('README.md', generateMarkdown(data)));
 }
 
 // Function call to initialize app
