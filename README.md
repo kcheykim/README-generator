@@ -1,29 +1,29 @@
-# **Readme Generator**
+# **README Generator**
 
-    ## Descritpion
-    Generate the readme file
+    ## **Descritpion**
+    generate README file
 
-    ## Table of Contents
+    ## **Table of Contents**
     * [Installation](#installation)
     * [Usage](#usage)
     * [Credits](#credits)
     * [License](#license)    
     
-    ## Installation
-    clone the repository
+    ## **Installation**
+    clone this repository
 
-    ## Usage - attach video here
+    ## **Usage - attach video here**
     undefined
   
 
-    ## Credits
-     kcheykim
+    ## **Credits**
+    kcheykim
 
-    ## License
+    ## **License**
 
-    ## Badges
+    ## **Badges**
 
-    ## Contributing
+    ## **Contributing**
 
-    ## Tests
+    ## **Tests**
   

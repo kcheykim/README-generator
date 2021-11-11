@@ -3,32 +3,32 @@ function generateMarkdown(data) {
     return (
         `# **${data.title}**
 
-    ## Descritpion
+    ## **Descritpion**
     ${data.description}
 
-    ## Table of Contents
+    ## **Table of Contents**
     * [Installation](#installation)
     * [Usage](#usage)
     * [Credits](#credits)
     * [License](#license)    
     
-    ## Installation
+    ## **Installation**
     ${data.installation}
 
-    ## Usage - attach video here
+    ## **Usage - attach video here**
     ${data.useage}
   
 
-    ## Credits
+    ## **Credits**
     ${data.contributors}
 
-    ## License
+    ## **License**
 
-    ## Badges
+    ## **Badges**
 
-    ## Contributing
+    ## **Contributing**
 
-    ## Tests
+    ## **Tests**
   `);
 }
 // TODO: Create a function that returns a license badge based on which license is passed in
