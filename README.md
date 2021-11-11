@@ -1,7 +1,7 @@
-# **README Generator**
+# **blah**
 
-    ## **Descritpion**
-    generate README file
+    **## Descritpion**
+    blah
 
     ## **Table of Contents**
     * [Installation](#installation)
@@ -10,14 +10,14 @@
     * [License](#license)    
     
     ## **Installation**
-    clone this repository
+    blah
 
     ## **Usage - attach video here**
     undefined
   
 
     ## **Credits**
-    kcheykim
+    blah
 
     ## **License**
 
