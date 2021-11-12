@@ -2,7 +2,7 @@
 function generateMarkdown(data) {
     return (`# ${data.title}
 
-This page is licensed under 
+### This page is licensed under [![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
 
 ## Descritpion
 ${data.description}
@@ -29,7 +29,7 @@ Here are the list of collaborators:
 ${data.contributors}
 
 ## License
-1#Notice: This license is covered under [![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
+### Notice: This license is covered under [![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
 
 ## Contributing
 ${data.contributing}
