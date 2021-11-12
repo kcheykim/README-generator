@@ -2,6 +2,8 @@
 function generateMarkdown(data) {
     return (`# ${data.title}
 
+This page is licensed under 
+
 ## Descritpion
 ${data.description}
 
@@ -26,8 +28,8 @@ ${data.usage}
 Here are the list of collaborators:  
 ${data.contributors}
 
-## License/Badges/Links
-Click: [![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
+## License
+1#Notice: This license is covered under [![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
 
 ## Contributing
 ${data.contributing}
