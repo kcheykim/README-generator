@@ -27,7 +27,7 @@ Here are the list of collaborators:
 Kosal Cheykim 
 
 ## License
-1#Notice: This license is covered under [![license](https://img.shields.io/badge/License-GPL-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
+###Notice: This license is covered under [![license](https://img.shields.io/badge/License-GPL-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
 
 ## Contributing
 No contributing guidelines.
