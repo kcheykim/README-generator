@@ -17,12 +17,12 @@ const questions = [{
     {
         type: 'input',
         name: 'installation',
-        message: 'Please provide the installation instructions:'
+        message: 'Please provide the installation instructions (Clone, etc):'
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'Please provide usage information:'
+        message: 'Please provide usage info (written instruction, how-to-video link, screenshoot link):'
     },
     {
         type: 'input',
@@ -33,7 +33,17 @@ const questions = [{
         type: 'list',
         name: 'license',
         message: 'What are the required license(s) for this project:',
-        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'NONE']
+        choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-3-Clause', 'NONE']
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Please indicate your contributing guidelines:',
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Command to run or test your application:',
     },
     {
         type: 'input',
