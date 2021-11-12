@@ -30,10 +30,10 @@ const questions = [{
         message: 'Who are the contributors for this project?'
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'What are the required license(s) for this project:',
-        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'ISC', 'BSD', 'WTFPL', 'UNKNOWN']
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'NONE']
     },
     {
         type: 'input',
