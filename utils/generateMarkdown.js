@@ -7,51 +7,51 @@ ${data.description}
 
 ## Table of Contents
 * [Installation](#installation)
-* [Usage and Demo Video](#usage)
+* [Usage](#usage)
 * [Credits](#credits)
-* [License - Badges - Link](#license)    
+* [License](#license) 
+* [Contributing](#contributing)
+* [Test](#test)  
+* [Questions](#questions)
 
 ## Installation
-Open up your terminal and clone this repository with: 
+Clone this repository:  
 $ git clone ${data.installation}
 
-## Usage and Demo Video
-Open up your ${data.usage}
+## Usage
+Here is how this application works:  
+${data.usage}
 
 ## Credits
-Here are the collaborators: ${data.contributors}
+Here are the list of collaborators:  
+${data.contributors}
 
-## License - Badges - Link
-
-[![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
+## License/Badges/Links
+Click: [![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
 
 ## Contributing
 ${data.contributing}
 
 ## Test
-Here is the instruction to run or test your application:
-${data.test}`);
+Here is the instruction to run or test your application:  
+${data.test}
 
+## Questions
+More Questions? Contact me via:  
+GitHub: http://github.com/${data.github}  
+Email: ${data.email}`);
 }
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//function renders the badge
 function renderLicenseBadge(license) {
     license = license.split('-');
     return `https://img.shields.io/badge/License-${license[0]}-yellow.svg`;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//function renders the license
 function renderLicenseLink(license) {
     if (license == 'NONE') { return 'https://unlicense.org'; }
     return `https://opensource.org/licenses/${license}`;
 }
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderLicenseSection(license) {
-//     return ![license](renderLicenseBadge(license)
-//     }
 
 module.exports = generateMarkdown;
