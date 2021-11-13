@@ -4,7 +4,7 @@ function generateMarkdown(data) {
 
 #### This page is licensed under [![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
 
-## Descritpion
+## Description
 ${data.description}
 
 ## Table of Contents
@@ -26,10 +26,10 @@ ${data.usage}
 
 ## Credits
 Here are the list of collaborators:  
-${data.contributors}
+${renderContributors(data.contributors)}
 
 ## License
-Notice: This license is covered under (${renderLicenseLink(data.license)})
+Notice: This license is covered under ${renderLicenseLink(data.license)}
 
 ## Contributing
 ${data.contributing}
@@ -54,6 +54,16 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
     if (license == 'NONE') { return 'https://unlicense.org'; }
     return `https://opensource.org/licenses/${license}`;
+}
+
+function renderContributors(people) {
+    let tempArr = people.split(', ');
+    let coll = '';
+    tempArr.forEach(element => {
+        console.log(element);
+        coll += `\n${element}`;
+    })
+    return coll;
 }
 
 module.exports = generateMarkdown;

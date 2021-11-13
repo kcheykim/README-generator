@@ -1,9 +1,9 @@
-# Professional Readme Generator
+# none
 
-#### This page is licensed under [![license](https://img.shields.io/badge/License-GPL-yellow.svg)](https://opensource.org/licenses/GPL-3.0)
+#### This page is licensed under [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Descritpion
-An importand part of any project is a well-crafted README.md file that will show off your work to other developers and potential employers. A great README file will help showcase the application with a description, Table of Contents, how to install the application, explaint how to use it, give credit to contributors, identify the license with its badges that will link, any contributing factors and how to test the application. This application is here to help fullstack students and well as developers create a great and functional README file to add to their repository. Once the application runs, the user will be prompt with a series of questions. The application will take the inputs and create a README file worthy of your project. So why wait? Give this application a try...
+## Description
+none
 
 ## Table of Contents
 * [Installation](#installation)
@@ -16,27 +16,30 @@ An importand part of any project is a well-crafted README.md file that will show
 
 ## Installation
 Clone this repository:  
-$ git clone https://github.com/kcheykim/README-generator.git
+$ git clone none
 
 ## Usage
 Here is how this application works:  
-path to a video or screenshot
+none
 
 ## Credits
 Here are the list of collaborators:  
-Kosal Cheykim 
+
+jk
+lm
+no
 
 ## License
-Notice: This license is covered under (https://opensource.org/licenses/GPL-3.0)
+Notice: This license is covered under https://opensource.org/licenses/MIT
 
 ## Contributing
-No contributing guidelines.
+none
 
 ## Test
 Here is the instruction to run or test your application:  
-node index.js
+none
 
 ## Questions
 More Questions? Contact me via:  
-GitHub: http://github.com/kcheykim  
-Email: kosalcheykim@gmail.com
+GitHub: http://github.com/none  
+Email: none

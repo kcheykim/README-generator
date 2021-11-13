@@ -27,7 +27,7 @@ const questions = [{
     {
         type: 'input',
         name: 'contributors',
-        message: 'Who are the contributors for this project?'
+        message: 'Who are the contributors for this project? (Please use commas to list them)'
     },
     {
         type: 'list',
@@ -55,25 +55,24 @@ const questions = [{
         name: 'email',
         message: 'Please provide your email address so you can be reached for addtional questions:'
     },
-
 ];
 
-// TODO: Create a function to write README file
+
+//function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
-        if (err) { console.log("There was an error", err) }
+        if (err) { console.log('There was an error', err) }
         console.log("Successfully writes out to file.");
     });
 }
 
-// TODO: Create a function to initialize app
+//function to initialize the application
 function init() {
     inquirer.prompt(questions)
         .then(data => writeToFile('README.md', generateMarkdown(data)))
         .catch((err) => {
-            console.log(err);
+            console.log('There was an error', err);
         });
 }
 
-// Function call to initialize app
 init();
