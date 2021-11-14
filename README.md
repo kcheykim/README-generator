@@ -1,6 +1,7 @@
 # none
 
-#### This page is licensed under [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+#### This page is licensed under (click on badge to take to to license's site):
+![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 none
@@ -15,8 +16,7 @@ none
 * [Questions](#questions)
 
 ## Installation
-Clone this repository:  
-$ git clone none
+git clone<br />,npm init<br />,npm install inquirer<br />
 
 ## Usage
 Here is how this application works:  
@@ -24,10 +24,7 @@ none
 
 ## Credits
 Here are the list of collaborators:  
-
-jk
-lm
-no
+none<br />
 
 ## License
 Notice: This license is covered under https://opensource.org/licenses/MIT

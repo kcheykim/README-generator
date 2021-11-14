@@ -15,9 +15,9 @@ const questions = [{
         message: 'Please write a description of your project:'
     },
     {
-        type: 'input',
-        name: 'installation',
-        message: 'Please provide the installation instructions (Clone, etc):'
+        type: 'confirm',
+        name: 'confirmInstall',
+        message: 'Do you want to provide installation instructions (Clone, Install, etc):'
     },
     {
         type: 'input',
@@ -57,19 +57,54 @@ const questions = [{
     },
 ];
 
+const instructions = [{
+        type: 'input',
+        name: 'installation',
+        message: 'Please provide the installation instructions (Clone, etc):'
+    },
+    {
+        type: 'confirm',
+        name: 'finish',
+        message: 'Do you want more instructions?'
+    }
+]
+
 
 //function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         if (err) { console.log('There was an error', err) }
-        console.log("Successfully writes out to file.");
+        console.log("Successful.");
     });
 }
 
-//function to initialize the application
+//function to handle the repeat of installation instructions
+function repeatQuestions(data) {
+    inquirer.prompt(instructions)
+        .then(instructionData => {
+
+            data.instructions.push(instructionData.installation.split(',') + '<br />')
+            if (instructionData.finish) {
+                repeatQuestions(data);
+            } else {
+                writeToFile('README.md', generateMarkdown(data))
+            }
+        })
+}
+
+//function to initialize the application and recursively call for more
+// installation input as long as the user continue to answer 'Y'
 function init() {
     inquirer.prompt(questions)
-        .then(data => writeToFile('README.md', generateMarkdown(data)))
+        .then(data => {
+            if (data.confirmInstall) {
+                data.instructions = [];
+                repeatQuestions(data);
+            } else {
+                data.instructions = ['Sorry, there are no instructions.'];
+                writeToFile('README.md', generateMarkdown(data));
+            }
+        })
         .catch((err) => {
             console.log('There was an error', err);
         });

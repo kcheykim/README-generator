@@ -2,7 +2,8 @@
 function generateMarkdown(data) {
     return (`# ${data.title}
 
-#### This page is licensed under [![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
+#### This page is licensed under (click on badge to take to to license's site):
+![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
 
 ## Description
 ${data.description}
@@ -17,8 +18,7 @@ ${data.description}
 * [Questions](#questions)
 
 ## Installation
-Clone this repository:  
-$ git clone ${data.installation}
+${data.instructions}
 
 ## Usage
 Here is how this application works:  
@@ -58,12 +58,9 @@ function renderLicenseLink(license) {
 
 function renderContributors(people) {
     let tempArr = people.split(', ');
-    let coll = '';
-    tempArr.forEach(element => {
-        console.log(element);
-        coll += `\n${element}`;
-    })
-    return coll;
+    let person = '';
+    tempArr.forEach(element => { person += `${element}<br />`; })
+    return person;
 }
 
 module.exports = generateMarkdown;
