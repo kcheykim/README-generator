@@ -2,8 +2,8 @@
 function generateMarkdown(data) {
     return (`# ${data.title}
 
-#### This page is licensed under (click on badge to take to to license's site):
-![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
+#### This page is licensed under (click badge for license page): 
+[![license](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
 
 ## Description
 ${data.description}
@@ -18,7 +18,7 @@ ${data.description}
 * [Questions](#questions)
 
 ## Installation
-${data.instructions}
+${renderInstructions(data.instructions)}
 
 ## Usage
 Here is how this application works:  
@@ -63,4 +63,9 @@ function renderContributors(people) {
     return person;
 }
 
+function renderInstructions(instructions) {
+    let newInstruction = '';
+    instructions.forEach(element => { newInstruction += `${element}<br />`; })
+    return newInstruction;
+}
 module.exports = generateMarkdown;

@@ -1,7 +1,7 @@
 # none
 
-#### This page is licensed under (click on badge to take to to license's site):
-![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+#### This page is licensed under (click badge for license page): 
+[![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 none
@@ -16,7 +16,7 @@ none
 * [Questions](#questions)
 
 ## Installation
-git clone<br />,npm init<br />,npm install inquirer<br />
+run this<br />run that<br />run more<br />
 
 ## Usage
 Here is how this application works:  

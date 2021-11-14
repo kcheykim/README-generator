@@ -83,7 +83,7 @@ function repeatQuestions(data) {
     inquirer.prompt(instructions)
         .then(instructionData => {
 
-            data.instructions.push(instructionData.installation.split(',') + '<br />')
+            data.instructions.push(instructionData.installation)
             if (instructionData.finish) {
                 repeatQuestions(data);
             } else {
