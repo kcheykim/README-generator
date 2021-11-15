@@ -29,7 +29,7 @@ Here are the list of collaborators:
 ${renderContributors(data.contributors)}
 
 ## License
-Notice: This license is covered under ${renderLicenseLink(data.license)}
+Notice: This license is covered under (${renderLicenseLink(data.license)})
 
 ## Contributing
 ${data.contributing}
