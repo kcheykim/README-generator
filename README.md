@@ -21,13 +21,14 @@ $git clone https://github.com/kcheykim/README-generator.git<br />$rm package.jso
 ## Usage
 Here is how this application works:  
 ![Readme-Generator](./assets/images/Readme-Generator.gif?raw=true)
+Here is the link to the video: https://watch.screencastify.com/v/Lb7tEGS5YpcCHeSaRw8k
 
 ## Credits
 Here are the list of collaborators:  
 Kosal Cheykim<br />None1<br />None2<br />
 
 ## License
-Notice: This license is covered under https://opensource.org/licenses/MIT
+Notice: This license is covered under (https://opensource.org/licenses/MIT)
 
 ## Contributing
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)

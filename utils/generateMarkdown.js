@@ -23,6 +23,7 @@ ${renderInstructions(data.instructions)}
 ## Usage
 Here is how this application works:  
 ${data.usage}
+Here is the link to the video: ${videoLink()}
 
 ## Credits
 Here are the list of collaborators:  
@@ -42,6 +43,10 @@ ${data.test}
 More Questions? Contact me via:  
 GitHub: http://github.com/${data.github}  
 Email: ${data.email}`);
+}
+
+function videoLink() {
+    return 'https://watch.screencastify.com/v/Lb7tEGS5YpcCHeSaRw8k';
 }
 
 //function renders the badge
