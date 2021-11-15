@@ -20,7 +20,7 @@ $git clone https://github.com/kcheykim/README-generator.git<br />$npm init<br />
 
 ## Usage
 Here is how this application works:  
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+https://watch.screencastify.com/v/6FwzCGS6UyyOFuSgPkjv
 
 ## Credits
 Here are the list of collaborators:  
