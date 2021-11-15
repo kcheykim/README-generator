@@ -18,12 +18,18 @@ const questions = [{
     {
         type: 'input',
         name: 'description',
-        message: 'Please write a description of your project:'
+        message: 'Please write a description of your project:',
+        validate: descriptionInput => {
+            if (descriptionInput) { return true; } else {
+                console.log('Please enter a description of your project!');
+                return false;
+            }
+        }
     },
     {
         type: 'confirm',
         name: 'confirmInstall',
-        message: 'Do you want to provide installation instructions (Clone, Install, etc):'
+        message: 'Do you want to provide installation instructions?'
     },
     {
         type: 'input',
@@ -54,7 +60,13 @@ const questions = [{
     {
         type: 'input',
         name: 'github',
-        message: 'Please provide your Github username:'
+        message: 'Please provide your Github username:',
+        validate: gitInput => {
+            if (gitInput) { return true; } else {
+                console.log('Please enter your Github username!');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
@@ -75,7 +87,6 @@ const instructions = [{
         message: 'Do you want more instructions?'
     }
 ]
-
 
 //function to write to README file
 function writeToFile(fileName, data) {
