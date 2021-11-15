@@ -1,4 +1,4 @@
-// TODO: Create a function to generate markdown for README
+// a function to generate markdown for README
 function generateMarkdown(data) {
     return (`# ${data.title}
 
@@ -55,7 +55,7 @@ function renderLicenseLink(license) {
     if (license == 'NONE') { return 'https://unlicense.org'; }
     return `https://opensource.org/licenses/${license}`;
 }
-
+//function to output a list of contributors
 function renderContributors(people) {
     let tempArr = people.split(', ');
     let person = '';
@@ -63,9 +63,11 @@ function renderContributors(people) {
     return person;
 }
 
+//function to out a list of installation instructions
 function renderInstructions(instructions) {
     let newInstruction = '';
     instructions.forEach(element => { newInstruction += `${element}<br />`; })
     return newInstruction;
 }
+
 module.exports = generateMarkdown;

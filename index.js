@@ -1,13 +1,19 @@
-// TODO: Include packages needed for this application
+//include packages needed for this application
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
+//an array of questions for user input
 const questions = [{
         type: 'input',
         name: 'title',
-        message: 'What is the title of your project?'
+        message: 'What is the title of your project?',
+        validate: titleInput => {
+            if (titleInput) { return true; } else {
+                console.log('Please enter your project title!');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
@@ -57,6 +63,7 @@ const questions = [{
     },
 ];
 
+//an array of question that repeats for more installation instructions
 const instructions = [{
         type: 'input',
         name: 'installation',
@@ -70,7 +77,7 @@ const instructions = [{
 ]
 
 
-//function to write README file
+//function to write to README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         if (err) { console.log('There was an error', err) }
@@ -82,18 +89,13 @@ function writeToFile(fileName, data) {
 function repeatQuestions(data) {
     inquirer.prompt(instructions)
         .then(instructionData => {
-
             data.instructions.push(instructionData.installation)
-            if (instructionData.finish) {
-                repeatQuestions(data);
-            } else {
-                writeToFile('README.md', generateMarkdown(data))
-            }
+            if (instructionData.finish) { repeatQuestions(data); } else { writeToFile('README.md', generateMarkdown(data)) }
         })
 }
 
-//function to initialize the application and recursively call for more
-// installation input as long as the user continue to answer 'Y'
+//function to initialize the application promt user with questions for input,
+// if the user provides installation instructions, it calls the repeatQuestions()
 function init() {
     inquirer.prompt(questions)
         .then(data => {
@@ -110,4 +112,5 @@ function init() {
         });
 }
 
+// Initialize 
 init();
