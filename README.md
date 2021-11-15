@@ -16,11 +16,11 @@ An important part of any project is a well-crafted README.md file that will show
 * [Questions](#questions)
 
 ## Installation
-$git clone https://github.com/kcheykim/README-generator.git<br />$rm package.json<br />$npm init<br />$npm install inquirer (@root)<br />
+$git clone https://github.com/kcheykim/README-generator.git<br />rm package.json<br />npm init<br />npm install inquirer (@root)<br />
 
 ## Usage
 Here is how this application works:  
-![Readme-generator](./assets/images/Readme-generator.gif?raw=true)
+![Readme-Generator](./assets/images/Readme-Generator.gif?raw=true)
 
 ## Credits
 Here are the list of collaborators:  

@@ -55,6 +55,7 @@ function renderLicenseLink(license) {
     if (license == 'NONE') { return 'https://unlicense.org'; }
     return `https://opensource.org/licenses/${license}`;
 }
+
 //function to output a list of contributors
 function renderContributors(people) {
     let tempArr = people.split(', ');
