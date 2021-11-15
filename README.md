@@ -20,7 +20,7 @@ $git clone https://github.com/kcheykim/README-generator.git<br />$rm package.jso
 
 ## Usage
 Here is how this application works:  
-![Readme-Generator](./assets/images/Readme-Generator.gif?raw=true)
+![Readme-Generator](./assets/images/Readme-Generator.gif?raw=true) <br />
 Here is the link to the video: https://watch.screencastify.com/v/Lb7tEGS5YpcCHeSaRw8k
 
 ## Credits
