@@ -22,7 +22,7 @@ ${renderInstructions(data.instructions)}
 
 ## Usage
 Here is how this application works:  
-${data.usage}
+${data.usage} <br />
 Here is the link to the video: ${videoLink()}
 
 ## Credits
